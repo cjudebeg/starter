@@ -19,8 +19,9 @@ Alternately, if the version of Python you are using is not 3.10.12 but does not 
 
 SUPERUSER LOGIN
 
-admin
-password
+user:admin
+
+password: password
 
 
 
