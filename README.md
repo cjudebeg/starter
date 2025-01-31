@@ -1,6 +1,9 @@
 Before starting virtual environment run:
 
 pyenv install 3.10.12
+
+and
+ 
 pyenv local 3.10.12
 
 Start virtual environment: 
