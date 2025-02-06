@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 from django.conf import settings
 
 
+# when a user registers a Profile instance is automatically created by a singal
+
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="avatars/", null=True, blank=True)
@@ -12,11 +15,15 @@ class Profile(models.Model):
     def __str__(self):
         return str(self.user)
 
+    # placeholder display if user does not supply name
+
     @property
     def name(self):
         if self.displayname:
             return self.displayname
         return self.user.username
+
+    # placeholder avatar if user does not supply avatar
 
     @property
     def avatar(self):

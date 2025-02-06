@@ -1,4 +1,4 @@
-#!/home/begley/DJANGO_STARTER/venv/bin/python3
+#!/home/begley/repos_25/starter/DJANGO_STARTER/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
